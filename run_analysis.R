@@ -17,6 +17,15 @@ names(joined_predictor_data) <- column_names
 #selecting columns with means and standard deviations
 joined_predictor_data <- joined_predictor_data[,sort(c(mean_column_indexes,std_column_indexes))]
 
+#loading subject training set
+subject_training_set <- read.table("UCI HAR Dataset/train/subject_train.txt")
+#loading subject test set
+subject_test_set <- read.table("UCI HAR Dataset/test/subject_test.txt")
+#joining test set and training set predictors
+joined_subject_data <- rbind(subject_training_set,subject_test_set)
+#setting subject column name
+names(joined_subject_data) <- c("subject")
+
 #loading activity label strings
 factor_levels <- read.table("UCI HAR Dataset/activity_labels.txt",stringsAsFactors=FALSE)[,2]
 #loading training set labels
@@ -28,9 +37,9 @@ joined_labels_data <- rbind(labels_training_set,labels_test_set)
 #converting to factor
 joined_labels_data_factor <- data.frame(activity=factor(joined_labels_data$V1,labels=factor_levels))
 #joining predictor and labels columns
-joined_all_data <- cbind(joined_predictor_data,joined_labels_data_factor)
+joined_all_data <- cbind(joined_predictor_data,joined_subject_data,joined_labels_data_factor)
 
-#grouping by activity labels and calculating mean for each activity and predictor column
-result <- summarise_each(group_by(joined_all_data,activity),funs(mean))
+#grouping by activity labels and subject and calculating mean for each activity and predictor column
+result <- summarise_each(group_by(joined_all_data,activity,subject),funs(mean))
 #writing results to file
 write.table(result, "result_data_set.txt", row.name=FALSE)
