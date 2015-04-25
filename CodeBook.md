@@ -2,7 +2,7 @@
 
 <h2>Variables</h2>
 
-<p>activity</p>
+<p><strong>activity</strong></p>
 <p>values:<br>
 1 WALKING<br>
 2 WALKING_UPSTAIRS<br>
@@ -11,12 +11,12 @@
 5 STANDING<br>
 6 LAYING<br>
 </p>
-<p>subject</p>
+<p><strong>subject</strong></p>
 <p>values:<br>
 integer values from 1 to 30</p>
 
 
-<p>tBodyAccmeanX<br>
+<p><strong>tBodyAccmeanX<br>
 tBodyAccmeanY<br>
 tBodyAccmeanZ<br>
 tBodyAccstdX<br>
@@ -81,7 +81,7 @@ fBodyBodyAccJerkMagstd<br>
 fBodyBodyGyroMagmean<br>
 fBodyBodyGyroMagstd<br>
 fBodyBodyGyroJerkMagmean<br>
-fBodyBodyGyroJerkMagstd<br>
+fBodyBodyGyroJerkMagstd</strong>
 </p>
 
 <p>values: floats, averages of corresponding columns in source file by activity and subject</p>
