@@ -1,21 +1,22 @@
-# Data Cleaning Project
+# Getting and Cleaning Data Course Project
 
-source files:
+<h2>source files<h2>
 
-directory: UCI HAR Dataset/
-activity_labels.txt - activity labels (content used to define activity factor labels)
+<p>directory: UCI HAR Dataset/</p>
+<p>activity_labels.txt - activity labels (content used to define activity factor labels)<br>
 features.txt - names of predictors (content used to name columns of resulting data frame)
+</p>
 
-directory: UCI HAR Dataset/train
-X_train.txt - predictors training data set
-y_train.txt - training data labels
-subject_train.txt - subjects training data
+<p>directory: UCI HAR Dataset/train</p>
+<p>X_train.txt - predictors training data set<br>
+y_train.txt - training data labels<br>
+subject_train.txt - subjects training data</p>
 
-directory: UCI HAR Dataset/test
-X_test.txt - predictors test data set
-y_test.txt - test data labels
-subject_test.txt - subjects test data set
+<p>directory: UCI HAR Dataset/test</p>
+<p>X_test.txt - predictors test data set<br>
+y_test.txt - test data labels<br>
+subject_test.txt - subjects test data set</p>
 
-data cleaning script:
+<h2>data processing R script</h2>
 
-run_analysis.R - loads all source files and outputs result_data_set.txt
+<p>run_analysis.R - reads all source files and outputs result_data_set.txt</p>
