@@ -92,6 +92,6 @@ fBodyBodyGyroJerkMagstd</strong>
 <li>joining rows from train and test data for predictors (X_train.txt,X_test.txt), subjects (subject_train.txt,subject_test.txt) and labels (y_train.txt,y_test.txt)</li>
 <li>extracting mean and std columns from predictors data frame (subsetting with previously found indexes)</li>
 <li>setting factor for labels (using activity_labels.txt)</li>
-<li>applying column join</li>
+<li>joining predictor, subject and labels columns</li>
 <li>grouping by activity labels and subject and calculating mean for each activity and predictor column</li>
 </ul>
