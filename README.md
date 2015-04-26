@@ -1,6 +1,8 @@
 # Getting and Cleaning Data Course Project
+<h2>Requirements</h2>
+<p>In order to successfully run un_analysis.R script you must have dplyr package installed</p>
 
-<h2>source files</h2>
+<h2>Source files</h2>
 
 <h3>directory: UCI HAR Dataset/</h3>
 <p>activity_labels.txt - activity labels (content used to define activity factor labels)<br>
@@ -17,6 +19,6 @@ subject_train.txt - subjects training data</p>
 y_test.txt - test data labels<br>
 subject_test.txt - subjects test data set</p>
 
-<h2>data processing R script</h2>
+<h2>Data processing R script</h2>
 
 <p>run_analysis.R - reads all source files and outputs result_data_set.txt</p>
