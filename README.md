@@ -1,6 +1,6 @@
 # Getting and Cleaning Data Course Project
 <h2>Requirements</h2>
-<p>In order to successfully run un_analysis.R script you must have dplyr package installed</p>
+<p>In order to successfully run run_analysis.R script you must have dplyr package installed</p>
 
 <h2>Source files</h2>
 
